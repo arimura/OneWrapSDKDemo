@@ -7,15 +7,18 @@
 
 import UIKit
 import GoogleMobileAds
+import OpenWrapSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
+        let appInfo = POBApplicationInfo()
+        appInfo.storeURL = URL(string: "https://apps.apple.com/jp/app/%E7%AF%80%E7%B4%84-%E9%80%9A%E4%BF%A1%E9%87%8F%E3%83%81%E3%82%A7%E3%83%83%E3%82%AB%E3%83%BC-%E3%81%B4%E3%82%88%E3%83%91%E3%82%B1/id956084814")!
+        OpenWrapSDK.setApplicationInfo(appInfo)
         return true
     }
 

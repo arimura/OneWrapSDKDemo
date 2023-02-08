@@ -7,6 +7,8 @@ target 'OneWrapSDKDemo' do
 
   # Pods for OneWrapSDKDemo
   pod 'Google-Mobile-Ads-SDK', '9.6.0'
+  pod 'OpenWrapSDK', '2.7.0'
+  pod 'AdMobPubMaticAdapter', '2.1.1'
 
   target 'OneWrapSDKDemoTests' do
     inherit! :search_paths

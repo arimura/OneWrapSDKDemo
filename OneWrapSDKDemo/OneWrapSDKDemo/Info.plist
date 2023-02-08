@@ -25,6 +25,8 @@
 	</dict>
     <key>GADApplicationIdentifier</key>
     <string>ca-app-pub-3940256099942544~1458002511</string>
+    <key>NSUserTrackingUsageDescription</key>
+    <string>The Advertising Identifier helps deliver ads that are relevant to your interests.</string>
     <key>SKAdNetworkItems</key>
       <array>
         <dict>
@@ -226,6 +228,14 @@
         <dict>
           <key>SKAdNetworkIdentifier</key>
           <string>3qcr597p9d.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>example100.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>example200.skadnetwork</string>
         </dict>
       </array>
 </dict>

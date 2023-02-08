@@ -1,4 +1,7 @@
 PODS:
+  - AdMobPubMaticAdapter (2.1.1):
+    - Google-Mobile-Ads-SDK (>= 9.0.0)
+    - OpenWrapSDK (>= 2.6.1)
   - Google-Mobile-Ads-SDK (9.6.0):
     - GoogleAppMeasurement (< 10.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
@@ -45,28 +48,37 @@ PODS:
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
+  - OpenWrapSDK (2.7.0):
+    - OpenWrapSDK/OpenWrap (= 2.7.0)
+  - OpenWrapSDK/OpenWrap (2.7.0)
   - PromisesObjC (2.1.1)
 
 DEPENDENCIES:
+  - AdMobPubMaticAdapter (= 2.1.1)
   - Google-Mobile-Ads-SDK (= 9.6.0)
+  - OpenWrapSDK (= 2.7.0)
 
 SPEC REPOS:
   trunk:
+    - AdMobPubMaticAdapter
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUserMessagingPlatform
     - GoogleUtilities
     - nanopb
+    - OpenWrapSDK
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  AdMobPubMaticAdapter: be2e6a2e6fb881873fd761002ff71d6ca7623447
   Google-Mobile-Ads-SDK: bdf13d37aa77e368510687b5305d4972b4f9e9c7
   GoogleAppMeasurement: 6de2b1a69e4326eb82ee05d138f6a5cb7311bcb1
   GoogleUserMessagingPlatform: 5f8b30daf181805317b6b985bb51c1ff3beca054
   GoogleUtilities: c2bdc4cf2ce786c4d2e6b3bcfd599a25ca78f06f
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
+  OpenWrapSDK: 2c7784a19a258ca841ff25c1a04c7c6ecbd7ba1c
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
 
-PODFILE CHECKSUM: 74aee1d31fb8a90db12aefc22b6534a61bc357ed
+PODFILE CHECKSUM: d9284dc01dcd449f990774d4b8ee5b7b2b41c617
 
 COCOAPODS: 1.11.3

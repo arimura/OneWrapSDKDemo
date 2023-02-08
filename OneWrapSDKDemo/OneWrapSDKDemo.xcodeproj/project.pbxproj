@@ -179,6 +179,7 @@
 				74E332D629935EA600ABA59A /* Frameworks */,
 				74E332D729935EA600ABA59A /* Resources */,
 				FC759F91646538A922477E95 /* [CP] Embed Pods Frameworks */,
+				1D9A443CB177BFC1277E76FF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +218,7 @@
 				74E332F629935EA800ABA59A /* Frameworks */,
 				74E332F729935EA800ABA59A /* Resources */,
 				6AC77688855C642596AF8E62 /* [CP] Embed Pods Frameworks */,
+				64D09CAE35A8DE4CA7C1BF49 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +321,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9A443CB177BFC1277E76FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64D09CAE35A8DE4CA7C1BF49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6AC77688855C642596AF8E62 /* [CP] Embed Pods Frameworks */ = {
