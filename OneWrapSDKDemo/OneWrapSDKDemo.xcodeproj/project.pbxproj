@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A86754898EF6063BDB96C09 /* Pods_OneWrapSDKDemo_OneWrapSDKDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E11E7908ADD3690A837E955 /* Pods_OneWrapSDKDemo_OneWrapSDKDemoUITests.framework */; };
 		74E332DD29935EA600ABA59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E332DC29935EA600ABA59A /* AppDelegate.swift */; };
 		74E332DF29935EA600ABA59A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E332DE29935EA600ABA59A /* SceneDelegate.swift */; };
 		74E332E129935EA600ABA59A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E332E029935EA600ABA59A /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		74E332F429935EA800ABA59A /* OneWrapSDKDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E332F329935EA800ABA59A /* OneWrapSDKDemoTests.swift */; };
 		74E332FE29935EA800ABA59A /* OneWrapSDKDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E332FD29935EA800ABA59A /* OneWrapSDKDemoUITests.swift */; };
 		74E3330029935EA900ABA59A /* OneWrapSDKDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E332FF29935EA900ABA59A /* OneWrapSDKDemoUITestsLaunchTests.swift */; };
+		A741DFC18EA80B550B6C4F90 /* Pods_OneWrapSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A02833B7D80FA8B7977AFC /* Pods_OneWrapSDKDemo.framework */; };
+		D82DFF3F0EA176B1B37C8AB0 /* Pods_OneWrapSDKDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F00B31D328347533BA4CA307 /* Pods_OneWrapSDKDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053EC84FA8876345D622FDE2 /* Pods-OneWrapSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWrapSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		17E79FBECBD52824E91191B7 /* Pods-OneWrapSDKDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWrapSDKDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-OneWrapSDKDemoTests/Pods-OneWrapSDKDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E11E7908ADD3690A837E955 /* Pods_OneWrapSDKDemo_OneWrapSDKDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneWrapSDKDemo_OneWrapSDKDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A02833B7D80FA8B7977AFC /* Pods_OneWrapSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneWrapSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53400432DD6FF4E5A3CBA99C /* Pods-OneWrapSDKDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWrapSDKDemoTests.release.xcconfig"; path = "Target Support Files/Pods-OneWrapSDKDemoTests/Pods-OneWrapSDKDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		682954F202CF9EF16E0CADFC /* Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F1E1333FE09AD83E6013718 /* Pods-OneWrapSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWrapSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		74E332D929935EA600ABA59A /* OneWrapSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWrapSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E332DC29935EA600ABA59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E332DE29935EA600ABA59A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		74E332F929935EA800ABA59A /* OneWrapSDKDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneWrapSDKDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E332FD29935EA800ABA59A /* OneWrapSDKDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWrapSDKDemoUITests.swift; sourceTree = "<group>"; };
 		74E332FF29935EA900ABA59A /* OneWrapSDKDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWrapSDKDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F00B31D328347533BA4CA307 /* Pods_OneWrapSDKDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneWrapSDKDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68493BFC9B54E46835C9878 /* Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A741DFC18EA80B550B6C4F90 /* Pods_OneWrapSDKDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D82DFF3F0EA176B1B37C8AB0 /* Pods_OneWrapSDKDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A86754898EF6063BDB96C09 /* Pods_OneWrapSDKDemo_OneWrapSDKDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EE149EF5372AD46D6EA80F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F1E1333FE09AD83E6013718 /* Pods-OneWrapSDKDemo.debug.xcconfig */,
+				053EC84FA8876345D622FDE2 /* Pods-OneWrapSDKDemo.release.xcconfig */,
+				682954F202CF9EF16E0CADFC /* Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.debug.xcconfig */,
+				F68493BFC9B54E46835C9878 /* Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.release.xcconfig */,
+				17E79FBECBD52824E91191B7 /* Pods-OneWrapSDKDemoTests.debug.xcconfig */,
+				53400432DD6FF4E5A3CBA99C /* Pods-OneWrapSDKDemoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		74E332D029935EA600ABA59A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				74E332F229935EA800ABA59A /* OneWrapSDKDemoTests */,
 				74E332FC29935EA800ABA59A /* OneWrapSDKDemoUITests */,
 				74E332DA29935EA600ABA59A /* Products */,
+				5EE149EF5372AD46D6EA80F9 /* Pods */,
+				B74DC527761648E731EBF968 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +158,16 @@
 			path = OneWrapSDKDemoUITests;
 			sourceTree = "<group>";
 		};
+		B74DC527761648E731EBF968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33A02833B7D80FA8B7977AFC /* Pods_OneWrapSDKDemo.framework */,
+				1E11E7908ADD3690A837E955 /* Pods_OneWrapSDKDemo_OneWrapSDKDemoUITests.framework */,
+				F00B31D328347533BA4CA307 /* Pods_OneWrapSDKDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E3330329935EA900ABA59A /* Build configuration list for PBXNativeTarget "OneWrapSDKDemo" */;
 			buildPhases = (
+				D2DDBC805B5015A385A7B8F3 /* [CP] Check Pods Manifest.lock */,
 				74E332D529935EA600ABA59A /* Sources */,
 				74E332D629935EA600ABA59A /* Frameworks */,
 				74E332D729935EA600ABA59A /* Resources */,
+				FC759F91646538A922477E95 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E3330629935EA900ABA59A /* Build configuration list for PBXNativeTarget "OneWrapSDKDemoTests" */;
 			buildPhases = (
+				037A9C95BF5EF18B6DF26823 /* [CP] Check Pods Manifest.lock */,
 				74E332EB29935EA800ABA59A /* Sources */,
 				74E332EC29935EA800ABA59A /* Frameworks */,
 				74E332ED29935EA800ABA59A /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E3330929935EA900ABA59A /* Build configuration list for PBXNativeTarget "OneWrapSDKDemoUITests" */;
 			buildPhases = (
+				F29F273892C4EA7282627106 /* [CP] Check Pods Manifest.lock */,
 				74E332F529935EA800ABA59A /* Sources */,
 				74E332F629935EA800ABA59A /* Frameworks */,
 				74E332F729935EA800ABA59A /* Resources */,
+				6AC77688855C642596AF8E62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		037A9C95BF5EF18B6DF26823 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneWrapSDKDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AC77688855C642596AF8E62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2DDBC805B5015A385A7B8F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneWrapSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F29F273892C4EA7282627106 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC759F91646538A922477E95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneWrapSDKDemo/Pods-OneWrapSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74E332D529935EA600ABA59A /* Sources */ = {
@@ -434,6 +583,7 @@
 		};
 		74E3330429935EA900ABA59A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1E1333FE09AD83E6013718 /* Pods-OneWrapSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +612,7 @@
 		};
 		74E3330529935EA900ABA59A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053EC84FA8876345D622FDE2 /* Pods-OneWrapSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +641,7 @@
 		};
 		74E3330729935EA900ABA59A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E79FBECBD52824E91191B7 /* Pods-OneWrapSDKDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +662,7 @@
 		};
 		74E3330829935EA900ABA59A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53400432DD6FF4E5A3CBA99C /* Pods-OneWrapSDKDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +683,7 @@
 		};
 		74E3330A29935EA900ABA59A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 682954F202CF9EF16E0CADFC /* Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +702,7 @@
 		};
 		74E3330B29935EA900ABA59A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68493BFC9B54E46835C9878 /* Pods-OneWrapSDKDemo-OneWrapSDKDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
