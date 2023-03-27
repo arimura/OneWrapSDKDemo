@@ -8,6 +8,8 @@
 import UIKit
 import GoogleMobileAds
 import AppTrackingTransparency
+import AdMobPubMaticAdapter
+import OpenWrapSDK
 
 class ViewController: UIViewController, GADFullScreenContentDelegate{
     
@@ -15,6 +17,8 @@ class ViewController: UIViewController, GADFullScreenContentDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        OpenWrapSDK.setLogLevel(POBSDKLogLevel.debug)
         
         
         if #available(iOS 14, *) {
@@ -24,6 +28,11 @@ class ViewController: UIViewController, GADFullScreenContentDelegate{
                 
                 // Do any additional setup after loading the view.
                 let request = GADRequest()
+                let extras = AdMobOpenWrapAdNetworkExtras()
+                extras.debug = true // Set to `false` if you want to disable debug mode
+//                extras.testModeEnabled = true
+                request.register(extras)
+                
                 GADRewardedAd.load(withAdUnitID:"ca-app-pub-2222899768110117/8412446094",
                                    request: request,
                                    completionHandler: { [self] ad, error in
