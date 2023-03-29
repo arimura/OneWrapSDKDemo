@@ -11,9 +11,10 @@ import AppTrackingTransparency
 import AdMobPubMaticAdapter
 import OpenWrapSDK
 
-class ViewController: UIViewController, GADFullScreenContentDelegate{
+class ViewController: UIViewController, GADFullScreenContentDelegate, GADBannerViewDelegate{
     
     private var rewardedAd: GADRewardedAd?
+    private var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,19 @@ class ViewController: UIViewController, GADFullScreenContentDelegate{
             button.widthAnchor.constraint(equalToConstant: 200),
             button.heightAnchor.constraint(equalToConstant: 50)
         ])
+       
+        bannerView = GADBannerView(adSize: GADAdSizeBanner)
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        // Define constraints
+        let horizontalConstraint = bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        let verticalConstraint = bannerView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
+
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
     }
     
     @objc func buttonClicked() {
@@ -87,5 +101,29 @@ class ViewController: UIViewController, GADFullScreenContentDelegate{
     /// Tells the delegate that the ad dismissed full screen content.
     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print("Ad did dismiss full screen content.")
+    }
+    
+    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
+      print("bannerViewDidReceiveAd")
+    }
+
+    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
+      print("bannerView:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+
+    func bannerViewDidRecordImpression(_ bannerView: GADBannerView) {
+      print("bannerViewDidRecordImpression")
+    }
+
+    func bannerViewWillPresentScreen(_ bannerView: GADBannerView) {
+      print("bannerViewWillPresentScreen")
+    }
+
+    func bannerViewWillDismissScreen(_ bannerView: GADBannerView) {
+      print("bannerViewWillDIsmissScreen")
+    }
+
+    func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
+      print("bannerViewDidDismissScreen")
     }
 }
