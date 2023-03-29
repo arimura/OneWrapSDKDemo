@@ -44,8 +44,11 @@ class ViewController: UIViewController, GADFullScreenContentDelegate, GADBannerV
 
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
-        bannerView.load(GADRequest())
-        
+        let request = GADRequest()
+        let extras = AdMobOpenWrapAdNetworkExtras()
+        extras.debug = true // Set to `false` if you want to disable debug mode
+        request.register(extras)
+        bannerView.load(request)
     }
     
     @objc func buttonClicked() {
