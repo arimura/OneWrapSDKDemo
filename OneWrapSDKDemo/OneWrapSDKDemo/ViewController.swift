@@ -19,8 +19,22 @@ class ViewController: UIViewController, GADFullScreenContentDelegate{
         super.viewDidLoad()
         
         OpenWrapSDK.setLogLevel(POBSDKLogLevel.debug)
+       
+        let button = UIButton(type: .system)
+        button.setTitle("Click Me!", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
+        view.addSubview(button)
         
-        
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            button.widthAnchor.constraint(equalToConstant: 200),
+            button.heightAnchor.constraint(equalToConstant: 50)
+        ])
+    }
+    
+    @objc func buttonClicked() {
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { (status: ATTrackingManager.AuthorizationStatus) in
                 // Use trackingAuthorizationStatus to determine the app-tracking permission status.
