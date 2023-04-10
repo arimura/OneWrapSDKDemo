@@ -33,6 +33,17 @@ class ViewController: UIViewController, GADFullScreenContentDelegate, GADBannerV
             button.widthAnchor.constraint(equalToConstant: 200),
             button.heightAnchor.constraint(equalToConstant: 50)
         ])
+        
+        let adInspectoButton = UIButton(type: .system)
+        adInspectoButton.translatesAutoresizingMaskIntoConstraints = false
+        adInspectoButton.setTitle("Tap me!", for: .normal)
+        adInspectoButton.addTarget(self, action: #selector(adInspectoButtonTapped), for: .touchUpInside)
+        view.addSubview(adInspectoButton)
+
+        NSLayoutConstraint.activate([
+            adInspectoButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            adInspectoButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
+        ])
        
         bannerView = GADBannerView(adSize: GADAdSizeBanner)
         bannerView.translatesAutoresizingMaskIntoConstraints = false
@@ -42,13 +53,24 @@ class ViewController: UIViewController, GADFullScreenContentDelegate, GADBannerV
         let verticalConstraint = bannerView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
 
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-2222899768110117/6180027201"
         bannerView.rootViewController = self
+        bannerView.delegate = self
         let request = GADRequest()
         let extras = AdMobOpenWrapAdNetworkExtras()
         extras.debug = true // Set to `false` if you want to disable debug mode
+        extras.testModeEnabled = true
         request.register(extras)
         bannerView.load(request)
+    }
+    
+    @objc func adInspectoButtonTapped() {
+        GADMobileAds.sharedInstance().presentAdInspector(from: self) { error in
+            if let error = error {
+                // Error will be non-nil if there was an issue and the inspector was not displayed.
+                print("Ad Inspector Error: \(error.localizedDescription)")
+            }
+        }
     }
     
     @objc func buttonClicked() {

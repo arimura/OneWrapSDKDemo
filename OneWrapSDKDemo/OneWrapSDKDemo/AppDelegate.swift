@@ -13,6 +13,8 @@ import OpenWrapSDK
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [ "481e1a0f289f0bfb782d97985f08dcb8" ]
+        
         // Override point for customization after application launch.
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         
