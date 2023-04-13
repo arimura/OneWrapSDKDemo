@@ -21,50 +21,37 @@ class ViewController: UIViewController, GADFullScreenContentDelegate, GADBannerV
         
         OpenWrapSDK.setLogLevel(POBSDKLogLevel.debug)
        
-        let button = UIButton(type: .system)
-        button.setTitle("Click Me!", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
-        view.addSubview(button)
-        
-        NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            button.widthAnchor.constraint(equalToConstant: 200),
-            button.heightAnchor.constraint(equalToConstant: 50)
-        ])
-        
-        let adInspectoButton = UIButton(type: .system)
-        adInspectoButton.translatesAutoresizingMaskIntoConstraints = false
-        adInspectoButton.setTitle("Tap me!", for: .normal)
-        adInspectoButton.addTarget(self, action: #selector(adInspectoButtonTapped), for: .touchUpInside)
-        view.addSubview(adInspectoButton)
 
-        NSLayoutConstraint.activate([
-            adInspectoButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
-            adInspectoButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 8),
-        ])
-       
-        bannerView = GADBannerView(adSize: GADAdSizeBanner)
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bannerView)
-        // Define constraints
-        let horizontalConstraint = bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        let verticalConstraint = bannerView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
-
-        bannerView.adUnitID = "ca-app-pub-2222899768110117/6180027201"
-        bannerView.rootViewController = self
-        bannerView.delegate = self
-        let request = GADRequest()
-        let extras = AdMobOpenWrapAdNetworkExtras()
-        extras.debug = true // Set to `false` if you want to disable debug mode
-        extras.testModeEnabled = true
-        request.register(extras)
-        bannerView.load(request)
+        
+        setupButtons()
     }
     
-    @objc func adInspectoButtonTapped() {
+    private func setupButtons() {
+        let button1 = createButton(title: "Show ad inspector", action: #selector(button1Tapped))
+        let button2 = createButton(title: "Show rewarded video", action: #selector(button2Tapped))
+        let button3 = createButton(title: "Show banner", action: #selector(button3Tapped))
+        
+        let stackView = UIStackView(arrangedSubviews: [button1, button2, button3])
+        stackView.axis = .vertical
+        stackView.distribution = .equalSpacing
+        stackView.alignment = .center
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackView)
+        
+        NSLayoutConstraint.activate([
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+    }
+    
+    private func createButton(title: String, action: Selector) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle(title, for: .normal)
+        button.addTarget(self, action: action, for: .touchUpInside)
+        return button
+    }
+    
+    @objc private func button1Tapped() {
         GADMobileAds.sharedInstance().presentAdInspector(from: self) { error in
             if let error = error {
                 // Error will be non-nil if there was an issue and the inspector was not displayed.
@@ -73,7 +60,7 @@ class ViewController: UIViewController, GADFullScreenContentDelegate, GADBannerV
         }
     }
     
-    @objc func buttonClicked() {
+    @objc private func button2Tapped() {
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { (status: ATTrackingManager.AuthorizationStatus) in
                 // Use trackingAuthorizationStatus to determine the app-tracking permission status.
@@ -110,6 +97,28 @@ class ViewController: UIViewController, GADFullScreenContentDelegate, GADBannerV
                 )
             }
         }
+    }
+    
+    @objc private func button3Tapped() {
+        
+        bannerView = GADBannerView(adSize: GADAdSizeBanner)
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        // Define constraints
+        let horizontalConstraint = bannerView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        let verticalConstraint = bannerView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        NSLayoutConstraint.activate([horizontalConstraint, verticalConstraint])
+
+        bannerView.adUnitID = "ca-app-pub-2222899768110117/6180027201"
+        bannerView.rootViewController = self
+        bannerView.delegate = self
+        let request = GADRequest()
+        let extras = AdMobOpenWrapAdNetworkExtras()
+        extras.debug = true // Set to `false` if you want to disable debug mode
+        extras.testModeEnabled = true
+        request.register(extras)
+        bannerView.load(request)
+        print("Button 3 tapped")
     }
     
     /// Tells the delegate that the ad failed to present full screen content.
